@@ -1,12 +1,10 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Name: dasom
-Source: https://github.com/cogniti/dasom
+Name: dasom-qt
+Source: https://github.com/dasom-im/dasom-qt
 
-Files: *
+Files:     *
 Copyright: 2015 Hodong Kim <hodong@cogno.org>
-License: LGPL-3+
-
-License: LGPL-3+
+License:   LGPL-3+
  This library is free software: you can redistribute it and/or modify it
  under the terms of the GNU Lesser General Public License as published
  by the Free Software Foundation, either version 3 of the License, or

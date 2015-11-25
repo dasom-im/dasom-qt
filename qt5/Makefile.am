@@ -11,19 +11,16 @@ libqt5im_dasom_la_SOURCES = im-dasom-qt5.cpp $(BUILT_SOURCES)
 libqt5im_dasom_la_CXXFLAGS = \
 	-Wall \
 	-Werror \
-	$(LIBDASOM_DEPS_CFLAGS) \
-	-I$(top_srcdir)/libdasom \
+	$(DASOM_CFLAGS) \
+	$(GTK3_CFLAGS) \
 	-DG_LOG_DOMAIN=\"dasom\" \
-	-DDASOM_COMPILATION \
 	$(QT5_PLATFORM_SUPPORT_CFLAGS) \
 	-I$(QT5_GUI_INCLUDE_PATH) \
 	-DQT_NO_KEYWORDS
 
 libqt5im_dasom_la_LDFLAGS = -avoid-version -module \
 	                          $(QT5_WIDGETS_LIBS) \
-	                          $(QT5_PLATFORM_SUPPORT_LIBS) \
-	                          $(GLIB_LIBS) $(GOBJECT_LIBS)
-libqt5im_dasom_la_LIBADD  = $(top_builddir)/libdasom/libdasom.la
+	                          $(QT5_PLATFORM_SUPPORT_LIBS) $(DASOM_LIBS)
 
 im-dasom-qt5.moc: im-dasom-qt5.cpp
 	$(AM_V_GEN) $(QT5_MOC) -I $(QT5_GUI_INCLUDE_PATH) im-dasom-qt5.cpp \

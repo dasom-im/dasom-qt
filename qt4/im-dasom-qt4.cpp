@@ -22,7 +22,7 @@
 #include <QTextFormat>
 #include <QInputContext>
 #include <QInputContextPlugin>
-#include "dasom-im.h"
+#include <dasom.h>
 
 class DasomInputContext : public QInputContext
 {
@@ -240,11 +240,6 @@ DasomInputContext::setFocusWidget (QWidget *w)
   g_debug (G_STRLOC ": %s", G_STRFUNC);
 
   QInputContext::setFocusWidget (w);
-
-  if (w)
-    dasom_im_focus_in (m_im);
-  else
-    dasom_im_focus_out (m_im);
 
   update ();
 }

@@ -10,16 +10,13 @@ libqt4im_dasom_la_SOURCES = im-dasom-qt4.cpp $(BUILT_SOURCES)
 libqt4im_dasom_la_CXXFLAGS = \
 	-Wall \
 	-Werror \
-	$(LIBDASOM_DEPS_CFLAGS) \
-	-I$(top_srcdir)/libdasom \
+	$(DASOM_CFLAGS) \
+	$(GTK3_CFLAGS) \
 	-DG_LOG_DOMAIN=\"dasom\" \
-	-DDASOM_COMPILATION \
 	$(QT4_GUI_CFLAGS) \
 	-DQT_NO_KEYWORDS
 
-libqt4im_dasom_la_LDFLAGS = -avoid-version -module $(QT4_GUI_LIBS) \
-	                          $(GLIB_LIBS) $(GOBJECT_LIBS)
-libqt4im_dasom_la_LIBADD  = $(top_builddir)/libdasom/libdasom.la
+libqt4im_dasom_la_LDFLAGS = -avoid-version -module $(QT4_GUI_LIBS) $(DASOM_LIBS)
 
 im-dasom-qt4.moc: im-dasom-qt4.cpp
 	$(AM_V_GEN) $(QT4_MOC) im-dasom-qt4.cpp -o im-dasom-qt4.moc
