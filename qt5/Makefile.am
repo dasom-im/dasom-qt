@@ -12,7 +12,6 @@ libqt5im_dasom_la_CXXFLAGS = \
 	-Wall \
 	-Werror \
 	$(DASOM_CFLAGS) \
-	$(GTK3_CFLAGS) \
 	-DG_LOG_DOMAIN=\"dasom\" \
 	$(QT5_PLATFORM_SUPPORT_CFLAGS) \
 	-I$(QT5_GUI_INCLUDE_PATH) \

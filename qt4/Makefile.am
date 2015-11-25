@@ -11,7 +11,6 @@ libqt4im_dasom_la_CXXFLAGS = \
 	-Wall \
 	-Werror \
 	$(DASOM_CFLAGS) \
-	$(GTK3_CFLAGS) \
 	-DG_LOG_DOMAIN=\"dasom\" \
 	$(QT4_GUI_CFLAGS) \
 	-DQT_NO_KEYWORDS
