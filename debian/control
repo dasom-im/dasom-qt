@@ -9,7 +9,7 @@ Build-Depends: debhelper,
                libqt4-dev,
                qtbase5-dev,
                qtbase5-private-dev,
-               dasom (>= 1.1)
+               dasom (>= 1.2)
 Standards-Version: 3.9.4
 Homepage: https://github.com/dasom-im/dasom-qt
 

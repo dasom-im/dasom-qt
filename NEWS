@@ -1,3 +1,10 @@
+dasom-qt (1.2) stable; urgency=medium
+
+  * Fixed dependency on gtk3 header file
+  * Detached Qt IM modules from Dasom framework
+
+ -- Hodong Kim <hodong@cogno.org>  Mon, 30 Nov 2015 01:11:40 +0900
+
 dasom (1.0) stable; urgency=medium
 
   * Initial Release
