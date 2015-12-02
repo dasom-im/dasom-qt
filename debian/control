@@ -16,6 +16,6 @@ Homepage: https://github.com/dasom-im/dasom-qt
 Package: dasom-qt
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, dasom (>= 1.2)
 Description: Qt IM modules for Dasom
  dasom-qt provides Qt4, Qt5 IM modules for Dasom
