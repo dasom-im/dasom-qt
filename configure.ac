@@ -1,6 +1,6 @@
 dnl Process this file with autoconf to produce a configure script.
 
-AC_INIT(dasom-qt, 1.2.1, https://github.com/dasom-im/dasom-qt/issues)
+AC_INIT(dasom-qt, 1.2.2, https://github.com/dasom-im/dasom-qt/issues)
 
 AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_MACRO_DIR([m4])

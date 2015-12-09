@@ -1,3 +1,9 @@
+dasom-qt (1.2.2) stable; urgency=medium
+
+  * Fixed logic about focus
+
+ -- Hodong Kim <hodong@cogno.org>  Thu, 10 Dec 2015 00:22:20 +0900
+
 dasom-qt (1.2.1) stable; urgency=medium
 
   * Fixed loss of focus
