@@ -1,3 +1,9 @@
+dasom-qt (1.2.1) stable; urgency=medium
+
+  * Fixed loss of focus
+
+ -- Hodong Kim <hodong@cogno.org>  Wed, 09 Dec 2015 19:47:17 +0900
+
 dasom-qt (1.2) stable; urgency=medium
 
   * Fixed dependency on gtk3 header file
