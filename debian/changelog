@@ -1,3 +1,9 @@
+dasom-qt (1.2.3) stable; urgency=medium
+
+  * Check if (!inputMethodAccepted()) (closes #2)
+
+ -- Hodong Kim <hodong@cogno.org>  Tue, 15 Dec 2015 23:51:31 +0900
+
 dasom-qt (1.2.2) stable; urgency=medium
 
   * Fixed logic about focus
