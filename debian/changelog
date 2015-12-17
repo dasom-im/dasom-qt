@@ -1,3 +1,10 @@
+dasom-qt (1.2.4) stable; urgency=medium
+
+  * Fixed logic about focus
+  * Fixed wrong logic (closes #3)
+
+ -- Hodong Kim <hodong@cogno.org>  Thu, 17 Dec 2015 23:23:00 +0900
+
 dasom-qt (1.2.3) stable; urgency=medium
 
   * Check if (!inputMethodAccepted()) (closes #2)
