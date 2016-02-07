@@ -150,7 +150,7 @@ DasomInputContext::DasomInputContext ()
 {
   g_debug (G_STRLOC ": %s", G_STRFUNC);
 
-  m_im = dasom_im_new (DASOM_CONNECTION_DASOM_IM);
+  m_im = dasom_im_new (DASOM_CONNECTION_DASOM_IM_QT4);
   g_signal_connect (m_im, "preedit-start",
                     G_CALLBACK (DasomInputContext::on_preedit_start), this);
   g_signal_connect (m_im, "preedit-end",
