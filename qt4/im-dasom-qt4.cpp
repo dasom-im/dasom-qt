@@ -3,7 +3,7 @@
  * im-dasom-qt4.cpp
  * This file is part of Dasom.
  *
- * Copyright (C) 2015 Hodong Kim <hodong@cogno.org>
+ * Copyright (C) 2015,2016 Hodong Kim <cogniti@gmail.com>
  *
  * Dasom is free software: you can redistribute it and/or modify it
  * under the terms of the GNU Lesser General Public License as published
@@ -150,7 +150,7 @@ DasomInputContext::DasomInputContext ()
 {
   g_debug (G_STRLOC ": %s", G_STRFUNC);
 
-  m_im = dasom_im_new ();
+  m_im = dasom_im_new (DASOM_CONNECTION_DASOM_IM);
   g_signal_connect (m_im, "preedit-start",
                     G_CALLBACK (DasomInputContext::on_preedit_start), this);
   g_signal_connect (m_im, "preedit-end",
