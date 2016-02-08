@@ -1,6 +1,6 @@
 dnl Process this file with autoconf to produce a configure script.
 
-AC_INIT(dasom-qt, 1.2.4, https://github.com/dasom-im/dasom-qt/issues)
+AC_INIT(dasom-qt, 1.2.5, https://github.com/dasom-im/dasom-qt/issues)
 
 AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_MACRO_DIR([m4])
@@ -15,7 +15,7 @@ AC_PROG_CXX
 
 LT_INIT([disable-static])
 
-PKG_CHECK_MODULES(DASOM, [dasom])
+PKG_CHECK_MODULES(DASOM, [dasom >= 1.2.2])
 PKG_CHECK_MODULES(QT4_GUI, [QtGui])
 PKG_CHECK_MODULES(QT5_WIDGETS, [Qt5Widgets])
 PKG_CHECK_MODULES(QT5_PLATFORM_SUPPORT, [Qt5PlatformSupport])
