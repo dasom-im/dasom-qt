@@ -1,3 +1,10 @@
+
+dasom-qt (1.2.5) stable; urgency=medium
+
+  * Fix dasom_im_new() parameter
+
+ -- Hodong Kim <cogniti@gmail.com>  Sun, 07 Feb 2016 21:17:12 +0900
+
 dasom-qt (1.2.4) stable; urgency=medium
 
   * Fixed logic about focus
