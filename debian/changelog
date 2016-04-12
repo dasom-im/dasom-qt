@@ -1,4 +1,9 @@
+dasom-qt (1.2.6) stable; urgency=medium
 
+  * Fixed configure error with Qt 5.6
+
+ -- Youngbin Han <sukso96100@gmail.com>  Tue, 12 Apr 2016 23:17:12 +0900
+ 
 dasom-qt (1.2.5) stable; urgency=medium
 
   * Fix dasom_im_new() parameter
